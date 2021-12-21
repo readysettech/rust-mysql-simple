@@ -25,7 +25,7 @@ path = "src/lib.rs"
 debug = true
 
 [features]
-default = ["native-tls"]
+default = ["native-tls","mysql_common/chrono", "mysql_common/time"]
 rustls-tls = ["rustls", "webpki", "webpki-roots", "rustls-pemfile"]
 nightly = []
 
@@ -39,7 +39,7 @@ bufstream = "~0.1"
 bytes = "1.0.1"
 io-enum = "1.0.0"
 lru = "0.6.0"
-mysql_common = "0.27.2"
+mysql_common = "0.28"
 socket2 = "0.4"
 once_cell = "1.7.2"
 pem = "0.8.1"
